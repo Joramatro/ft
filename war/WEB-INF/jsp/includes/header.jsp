@@ -10,7 +10,7 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="index,all" />
 	<meta name="revisit-after" content="1 days" />
-	<meta name="lang" content="es" />
+	<meta name="lang" content="en" />
 	<!-- end: Meta -->
 	
 	<!-- start: Mobile Specific -->
@@ -18,321 +18,219 @@
 	<!-- end: Mobile Specific -->
 	<c:choose>
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'EB'}">
-		<title>${publicacion.titulo} en análisis y online en Comprar Móviles Hoy</title> 
-		<meta name="description" content="${publicacion.descripcion} en Comprar Móviles Hoy"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="${publicacion.titulo} en Comprar Móviles Hoy" />
+		<title>${publicacion.titulo} - Feel Tighter</title> 
+		<meta name="description" content="${publicacion.descripcion} - Feel Tighter"/>
+		<meta name="author" content="Feel Tighter" />
+		<meta name="copyright" content="Feel Tighter" />
+		<meta name="application-name" content="${publicacion.titulo} - Feel Tighter" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="${publicacion.titulo} en análisis y online en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="${publicacion.descripcion} en Comprar Móviles Hoy"/>
-		<meta property="og:type" content="movil"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/${publicacion.url}"/>
+		<meta property="og:title" content="${publicacion.titulo} - Feel Tighter"/>
+		<meta property="og:description" content="${publicacion.descripcion} - Feel Tighter"/>
+		<meta property="og:type" content="post"/>
+		<meta property="og:url" content="http://www.feeltighter.com/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hello@feeltighter.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@Jorge_Amat1">
+		<meta name="twitter:site" content="@FeelTighter">
+		<meta name="twitter:creator" content="@FeelTighter">
 		<meta name="twitter:title" content="${publicacion.titulo}">
 		<meta name="twitter:description" content="${publicacion.descripcion}">
 		<meta name="twitter:image" content="${publicacion.lImages[0]}">
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="feeltighter.com">
 		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/${publicacion.url}"/>
-	</c:when>
-	<c:when test="${!empty publicacion && publicacion.tipo eq 'AR'}">
-		<title>${publicacion.titulo} en Comprar Móviles Hoy</title> 
-		<meta name="description" content="${publicacion.descripcion}"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="${publicacion.titulo} en Comprar Móviles Hoy" />
-		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="${publicacion.titulo}"/>
-		<meta property="og:description" content="${publicacion.descripcion}"/>
-		<meta property="og:type" content="articulos"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/${publicacion.url}"/>
-		<meta property="og:image" content="${publicacion.lImages[0]}"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
-		<!-- end: Facebook Open Graph -->
-		<!-- start: Twitter tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@Jorge_Amat1">
-		<meta name="twitter:title" content="${publicacion.titulo}">
-		<meta name="twitter:description" content="${publicacion.descripcion}">
-		<meta name="twitter:image" content="${publicacion.lImages[0]}">
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
-		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/${publicacion.url}"/>
+		<link rel="canonical" href="http://www.feeltighter.com/${publicacion.url}"/>
 	</c:when>	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'extras')}">
-		<title>Accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para Smartphones libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Sony, Alcatel, Huawei o Apple"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Extras en Comprar Moviles Hoy" />
+		<title>Special Offers - Feel Tighter</title> 
+		<meta name="description" content="Get access to special offers for the products we review and detail at Feel Tighter"/>
+		<meta name="author" content="Feel Tighter" />
+		<meta name="copyright" content="Feel Tighter" />
+		<meta name="application-name" content="Special Offers - Feel Tighter" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Extras, accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para smartphones libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Sony, Alcatel, Huawei o Apple"/>
-		<meta property="og:type" content="extras"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/extras"/>
+		<meta property="og:title" content="Get access to special offers for the products we review and detail at Feel Tighter"/>
+		<meta property="og:description" content="Get access to special offers for the products we review and detail at Feel Tighter"/>
+		<meta property="og:type" content="offers"/>
+		<meta property="og:url" content="http://www.feeltighter.com/specialoffers"/>
 		<c:if test="${!empty publicaciones}">
 			<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
 		</c:if>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hello@feeltighter.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para smartphones libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Sony, Alcatel, Huawei o Apple">
+		<meta name="twitter:site" content="@FeelTighter">
+		<meta name="twitter:creator" content="@FeelTighter">
+		<meta name="twitter:title" content="Special Offers - Feel Tighter">
+		<meta name="twitter:description" content="Get access to special offers for the products we review and detail at Feel Tighter">
 		<c:if test="${!empty publicaciones}">
 			<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 		</c:if>
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="feeltighter.com">
 		<!-- end: Twitter tags -->		
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/extras"/>
+		<link rel="canonical" href="http://www.feeltighter.com/specialoffers"/>
 	</c:when>
 		<c:when test="${fn:contains(pageContext.request.requestURI, 'sobre')}">
-		<title>Sobre Nosotros y Comprar Móviles Hoy</title> 
-		<meta name="description" content="Toda la información sobre los que trabajamos en Comprar Móviles Hoy, su experiencia y valores profesionales"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Sobre Nosotros en Comprar Móviles Hoy" />
+		<title>About us - Feel Tighter</title> 
+		<meta name="description" content="Information about us and our professional values - Feel Tighter"/>
+		<meta name="author" content="Feel Tighter" />
+		<meta name="copyright" content="Feel Tighter" />
+		<meta name="application-name" content="About us Feel Tighter" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Sobre Nosotros en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Toda la información sobre los que trabajamos en Comprar Móbil Hoy, su experiencia y valores profesionales"/>
-		<meta property="og:type" content="sobre"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/sobre"/>
+		<meta property="og:title" content="About us - Feel Tighter"/>
+		<meta property="og:description" content="Get access to special offers for the products we review and detail at Feel Tighter"/>
+		<meta property="og:type" content="about"/>
+		<meta property="og:url" content="http://www.feeltighter.com/about"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hello@feeltighter.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy2">
 		<meta name="twitter:creator" content="@Jorge_Amat1">
-		<meta name="twitter:title" content="Sobre nosotros en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Toda la información sobre los que trabajamos en Comprar Móviles Hoy, su experiencia y valores profesionales">
+		<meta name="twitter:title" content="About us - Feel Tighter">
+		<meta name="twitter:description" content="Get access to special offers for the products we review and detail at Feel Tighter">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="feeltighter.com">
 		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/sobre"/>	
+		<link rel="canonical" href="http://www.feeltighter.com/about"/>	
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'contacta')}">
-		<title>Contacta con Comprar Móviles Hoy</title> 
-		<meta name="description" content="Contacta con los que trabajamos en Comprar Móviles Hoy"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Contacto en Comprar Móviles Hoy" />
+		<title>Contact - Feel Tighter</title> 
+		<meta name="description" content="Contact with the Feel Tighter Team"/>
+		<meta name="author" content="Feel Tighter" />
+		<meta name="copyright" content="Feel Tighter" />
+		<meta name="application-name" content="Contact" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Contacta en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Contacta con los que trabajamos en Comprar Móviles Hoy"/>
-		<meta property="og:type" content="contacto"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/contacto"/>
+		<meta property="og:title" content="Contact - Feel Tighter"/>
+		<meta property="og:description" content="Contact with the Feel Tighter Team"/>
+		<meta property="og:type" content="contact"/>
+		<meta property="og:url" content="http://www.feeltighter.com/contact"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hello@feeltighter.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@Jorge_Amat1">
-		<meta name="twitter:title" content="Contacta con nosotros en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Contacta con los que trabajamos en Comprar Móviles Hoy">
+		<meta name="twitter:site" content="@FeelTighter">
+		<meta name="twitter:creator" content="@FeelTighter">
+		<meta name="twitter:title" content="Contact - Feel Tighter Team">
+		<meta name="twitter:description" content="Contact with the Feel Tighter Team">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="feeltighter.com">
 		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/contacto"/>
+		<link rel="canonical" href="http://www.feeltighter.com/contact"/>
 	</c:when>
-	
-	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks') && not empty param.filtro}">
-		<title>Móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Análisis, precios y comparativas online de móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas comparar online móviles de distintos tipos, Smartphones libres, android y baratos"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Móviles en Comprar Móviles Hoy" />
-		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/> 
-		<meta property="og:description" content="Análisis, precios y comparativas online de móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas comparar online móviles de distintos tipos, Smartphones libres, android y baratos"/>		
-		<meta property="og:type" content="movil"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/moviles"/>
-		<c:if test="${!empty publicaciones}">
-			<c:if test="${!empty publicaciones[0].lImages}">
-				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
-			</c:if>
-		</c:if>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
-		<!-- end: Facebook Open Graph -->
-		<!-- start: Twitter tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta property="twitter:title" content="Móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/> 
-		<meta property="twitter:description" content="Análisis, precios y comparativas online de móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas comparar online móviles de distintos tipos, Smartphones libres, android y baratos"/>		
-		<c:if test="${!empty publicaciones}">
-			<c:if test="${!empty publicaciones[0].lImages}">
-				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
-			</c:if>
-		</c:if>
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/moviles"/>
-		<!-- end: Twitter tags -->		
-	</c:when>	
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
-		<title>Móviles, precios y comparativas online en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, Smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Móviles en Comprar Móviles Hoy" />
+		<title>Blog - Feel Tighter</title> 
+		<meta name="description" content="Post and reviews about heatlh and beauty in our blog - Feel Tighter"/>
+		<meta name="author" content="Feel Tighter" />
+		<meta name="copyright" content="Feel Tighter" />
+		<meta name="application-name" content="posts" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Móviles, precios y comparativas online en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
-		<meta property="og:type" content="movil"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/moviles"/>
+		<meta property="og:title" content="Blog - Feel Tighter"/>
+		<meta property="og:description" content="Post and reviews about heatlh and beauty in our blog - Feel Tighter"/>
+		<meta property="og:type" content="post"/>
+		<meta property="og:url" content="http://www.feeltighter.com/blog"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
 			</c:if>
 		</c:if>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hello@feeltighter.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Móviles, precios y comparativas online en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, Smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
+		<meta name="twitter:site" content="@FeelTighter">
+		<meta name="twitter:creator" content="@FeelTighter">
+		<meta name="twitter:title" content="Blog - Feel Tighter">
+		<meta name="twitter:description" content="Post and reviews about heatlh and beauty in our blog - Feel Tighter">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 			</c:if>
 		</c:if>
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/moviles"/>
+		<meta name="twitter:domain" content="feeltighter.com">
+		<link rel="canonical" href="http://www.feeltighter.com/blog"/>
 		<!-- end: Twitter tags -->		
 	</c:when>
 	
-	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog') && not empty param.filtro}">
-		<title>Artículos y opinión sobre móviles de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Opinión y artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móvil Hoy" />
-		<meta name="application-name" content="Blog en Comprar Móviles Hoy" />
-		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Artículos y opinión sobre móviles de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Opinión y artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos"/>
-		<meta property="og:type" content="articulo"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/blog"/>
-		<c:if test="${!empty publicaciones}">
-			<c:if test="${!empty publicaciones[0].lImages}">
-				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
-			</c:if>
-		</c:if>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
-		<!-- end: Facebook Open Graph -->
-		<!-- start: Twitter tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta property="twitter:title" content="Artículos y opinión sobre móviles de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/>
-		<meta property="twitter:description" content="Opinión y artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos"/>		
-		<c:if test="${!empty publicaciones}">
-			<c:if test="${!empty publicaciones[0].lImages}">
-				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
-			</c:if>
-		</c:if>
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
-		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/blog"/>		
-	</c:when>	
-	
-	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
-		<title>Artículos y opinión sobre móviles en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móvil Hoy" />
-		<meta name="application-name" content="Blog en Comprar Móviles Hoy" />
-		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Opinión y detalles sobre móviles para que puedas comparararlos y elegir tu móvil online"/>
-		<meta property="og:description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, Smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
-		<meta property="og:type" content="articulo"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/blog"/>
-		<c:if test="${!empty publicaciones}">
-			<c:if test="${!empty publicaciones[0].lImages}">
-				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
-			</c:if>
-		</c:if>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
-		<!-- end: Facebook Open Graph -->
-		<!-- start: Twitter tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Opinión y detalles sobre móviles para que puedas comparararlos y elegir tu móvil online">
-		<meta name="twitter:description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
-		<c:if test="${!empty publicaciones}">
-			<c:if test="${!empty publicaciones[0].lImages}">
-				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
-			</c:if>
-		</c:if>
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
-		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/blog"/>		
-	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'privacidad')}">
-		<title>Política de privacidad de Comprar Móviles Hoy</title> 
-		<meta name="description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Política privacidad Comprar Móviles Hoy" />
+		<title>Privacy - Feel Tighter</title> 
+		<meta name="description" content="Privacy conditions at Feel Tighter"/>
+		<meta name="author" content="Feel Tighter" />
+		<meta name="copyright" content="Feel Tighter" />
+		<meta name="application-name" content="Privacy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Política de privacidad de Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/politica-de-privacidad"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com/"/>
+		<meta property="og:title" content="Privacy - Feel Tighter"/>
+		<meta property="og:description" content="Privacy at Feel Tighter"/>
+		<meta property="og:url" content="http://www.feeltighter.com/privacy"/>
+		<meta property="og:email" content="hello@feeltighter.com/"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Política de privacidad de Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy">
-		<meta name="twitter:domain" content="comprarmovileshoy.com/">
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/politica-de-privacidad"/>
+		<meta name="twitter:site" content="@FeelTighter">
+		<meta name="twitter:creator" content="@FeelTighter">
+		<meta name="twitter:title" content="Privacy - Feel Tighter">
+		<meta name="twitter:description" content="Privacy conditions at Feel Tighter">
+		<meta name="twitter:domain" content="feeltighter.com/">
+		<link rel="canonical" href="http://www.feeltighter.com/privacy"/>
 		<!-- end: Twitter tags -->		
-	</c:when>	
-	<c:otherwise>
-		<title>Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre móviles libres y smartphones para comprar un móvil barato y comparar precios online</title> 
-		<meta name="description" content="Información para que puedas comprar online móviles libres y baratos para conseguir el móvil más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android y baratos, de marcas como Samsung, Sony, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson o iPhone"/>
-		<meta name="author" content="Comprar Móviles Hoy" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="móviles en Comprar Móviles Hoy" />
+	</c:when>
+	
+	<c:when test="${fn:contains(pageContext.request.requestURI, 'terms')}">
+		<title>Terms - Feel Tighter</title> 
+		<meta name="description" content="Terms conditions at Feel Tighter"/>
+		<meta name="author" content="Feel Tighter" />
+		<meta name="copyright" content="Feel Tighter" />
+		<meta name="application-name" content="Terms" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Comprar Móviles Hoy - Análisis y opinión sobre móviles libres y smartphones para comprar un smartphone libre, barato y comparar precios online"/>
-		<meta property="og:description" content="Información para que puedas comprar online el móvil libre más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
-		<meta property="og:type" content="principal"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com"/>
-		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:title" content="Terms - Feel Tighter"/>
+		<meta property="og:description" content="Terms at Feel Tighter"/>
+		<meta property="og:url" content="http://www.feeltighter.com/terms"/>
+		<meta property="og:email" content="hello@feeltighter.com/"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Análisis y opinión sobre móviles y smartphones libres para comprar un móvil barato y comparar precios online">
-		<meta name="twitter:description" content="Información para que puedas comprar online el móvil libre más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
+		<meta name="twitter:site" content="@FeelTighter">
+		<meta name="twitter:creator" content="@FeelTighter">
+		<meta name="twitter:title" content="Terms - Feel Tighter">
+		<meta name="twitter:description" content="Terms conditions at Feel Tighter">
+		<meta name="twitter:domain" content="feeltighter.com/">
+		<link rel="canonical" href="http://www.feeltighter.com/terms"/>
+		<!-- end: Twitter tags -->		
+	</c:when>
+	
+	<c:otherwise>
+		<title>Welcome to Feel Tighter - Reviews and advice about health and beauty</title> 
+		<meta name="description" content="Reviews and advice about health and beauty to get your goals and feel tighter and better in your daily life, we show your new path and it’s time to realize it"/>
+		<meta name="author" content="Feel Tighter" />
+		<meta name="copyright" content="Feel Tighter" />
+		<meta name="application-name" content="Posts" />
+		<!-- start: Facebook Open Graph -->
+		<meta property="og:title" content="Welcome to Feel Tighter - Reviews and advice about health and beauty"/>
+		<meta property="og:description" content="Reviews and advice about health and beauty to get your goals and feel tighter and better in your daily life, we show your new path and it’s time to realize it"/>
+		<meta property="og:type" content="principal"/>
+		<meta property="og:url" content="http://www.feeltighter.com"/>
+		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
+		<meta property="og:email" content="hello@feeltighter.com"/>
+		<!-- end: Facebook Open Graph -->
+		<!-- start: Twitter tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@FeelTighter">
+		<meta name="twitter:creator" content="@FeelTighter">
+		<meta name="twitter:title" content="Welcome to Feel Tighter - Reviews and advice about health and beauty">
+		<meta name="twitter:description" content="Reviews and advice about health and beauty to get your goals and feel tighter and better in your daily life, we show your new path and it’s time to realize it.">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="feeltighter.com">
 		<!-- end: Twitter tags -->				
-		<link rel="canonical" href="http://www.comprarmovileshoy.com"/>
+		<link rel="canonical" href="http://www.feeltighter.com"/>
 	</c:otherwise>		
 	</c:choose>
-	<link rel="alternate" type="application/rss+xml" title="Comprar Móviles Hoy RSS Feed" href="http://www.comprarmovileshoy.com/rssfeed" />
-	<link rel="author" href="https://plus.google.com/109937898739836694401" />
-	<link rel="publisher" href="https://www.google.com/+Comprarmovileshoy" />
+	<link rel="alternate" type="application/rss+xml" title="Feel Tighter RSS Feed" href="http://www.feeltighter.com/rssfeed" />
+	<link rel="author" href="https://plus.google.com/" />
+	<link rel="publisher" href="https://www.google.com/" />
 	<style>
 	@font-face {
 	  font-family: 'Droid Sans';
@@ -397,7 +295,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-phone circle"></i>Comprar Móviles <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-phone circle"></i>Feel <span>Tighter</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul id="menuSuperior" class="nav" style="margin-right:-30px;">
 							<li id="menuInicio">
