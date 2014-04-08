@@ -107,7 +107,7 @@
 			</div>			
 			<%@ include file="/WEB-INF/jsp/includes/masleidos.jsp"%>
 
-       		<%@ include file="/WEB-INF/jsp/includes/carrusel.jsp"%>      	
+       		<%-- <%@ include file="/WEB-INF/jsp/includes/carrusel.jsp"%> --%>      	
 		</div>
 		<!--end: Container-->
 	</div>

@@ -54,16 +54,7 @@ public class BlogController extends PublicacionAbstract {
 	return "blog";
     }
 
-    @RequestMapping(value = { "/moviles" }, method = { RequestMethod.GET })
-    public String getPublicacionese(ModelMap model, HttpServletRequest request,
-	    HttpServletResponse response) throws IOException {
-
-	setPublicaciones(model, WebConstants.SessionConstants.EBOOK);
-
-	return "ebooks";
-    }
-
-    @RequestMapping(value = { "/extras" }, method = { RequestMethod.GET })
+    @RequestMapping(value = { "/specialoffer" }, method = { RequestMethod.GET })
     public String getAccesorios(ModelMap model, HttpServletRequest request,
 	    HttpServletResponse response) throws IOException {
 

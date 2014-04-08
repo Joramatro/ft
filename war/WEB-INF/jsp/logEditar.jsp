@@ -8,12 +8,12 @@
 <html lang="es">
 <html>
   <head>
-    <title>Edicion</title>
+    <title>Edition Feel Tighter</title>
     
      <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
 	<%@ include file="/WEB-INF/jsp/includes/styles.jsp"%>
-	<link href="/css/parallax-sliderv1.css" rel="stylesheet">
+	<link href="/css/parallax-slider.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
@@ -26,7 +26,7 @@
         <!-- Fav and touch icons -->
 		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 		<link rel="stylesheet" href="/css/apprise-v2.css" type="text/css" />
-    <meta name="description" content="Subida de archivos y herramienta de edicion para Comprar Móviles Hoy">
+    <meta name="description" content="Subida de archivos y herramienta de edicion para Comprar eBook Hoy">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			.ui-autocomplete-loading { background: white url('/img/fancybox_loading.gif') right center no-repeat; }
@@ -55,7 +55,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-phone circle"></i>Comprar Móviles <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-book-open circle"></i>Feel <span>Tighter</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul class="nav">
 							<li class="active">
@@ -84,7 +84,7 @@
 				<c:choose>
 				<c:when test="${empty user}">
 				   <div id="msg"></div>				
-		           <h1><i class="ico-keynote ico-white"></i><a id="login" href="#" class="btn login">Login para editores</a></h1>
+		           <h1><i class="ico-keynote ico-white"></i><a id="login" href="#" class="btn login">Login for publishers</a></h1>
 		        </c:when>
 				<c:otherwise>
 					<h1><i class="ico-keynote ico-white"></i><a id="logout" href="#" class="btn logout">Logout</a></h1>
@@ -101,7 +101,7 @@
 				
 		<!--start: Container -->
     	<div class="container">
-				<label>Tienes que estar dado de alta como editor para poder crear nuevas publicaciones</label>
+				<label>You need to login</label>
 		</div>
 	</div>
 	
@@ -118,7 +118,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="/">CC<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="/">F<span>T</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -130,11 +130,13 @@
 
 						<ul id="footer-nav">
 
-							<li><a href="/">Inicio</a></li>
+							<li><a href="/">Home</a></li>
 
-							<li><a href="/moviles">Móviles</a></li>
+							<li><a href="/blog">blog</a></li>
+
+							<li><a href="/about">About</a></li>
 							
-							<li><a href="/contacto">Contacto</a></li>
+							<li><a href="/contact">Contact</a></li>
 
 						</ul>
 
@@ -174,9 +176,9 @@
 				<!-- start: About -->
 				<div class="span3">
 					
-					<h3>Sobre nosotros</h3>
+					<h3>About us</h3>
 					<p>
-						Somos un equipo de personas con gran formación tecnológica y apasionadas por todo lo relacionado con ella. Poseemos una gran experiencia en el mundo de internet y te brindamos la mejor actualidad en Internet, noticias de gadget tecnológicos, software y telefonía.
+						We are a professional team passionate about healthy and beauty who want to provide you the best information and advice for getting your life goals.
 					</p>
 						
 				</div>
@@ -197,7 +199,7 @@
 				<div class="span6">
 				
 					<!-- start: Follow Us -->
-					<h3>Síguenos!</h3>
+					<h3>Follow us!</h3>
 					<ul class="social-grid">
 						<li>
 							<div class="social-item">				
@@ -261,10 +263,10 @@
 					<!-- start: Newsletter -->
 					<form id="newsletter">
 						<h3>Newsletter</h3>
-						<p>Por favor, déjanos tu email para conocer nuestras nuevas publicaciones</p>
+						<p>Let us your mail to get our latest news!</p>
 						<label for="newsletter_input">@:</label>
 						<input type="text" id="newsletter_input"/>
-						<input type="submit" id="newsletter_submit" value="submit">
+						<input type="button" id="newsletter_submit" value="submit">
 					</form>
 					<!-- end: Newsletter -->
 				
@@ -287,7 +289,7 @@
 		
 			<div class="span12">
 				<p>
-					&copy; 2014, <a href="/">Compra Móviles Hoy</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+					&copy; 2014, <a href="/">Feel Tighter</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				</p>
 			</div>
 	

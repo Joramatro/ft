@@ -1,4 +1,4 @@
-<!-- Indices written at Tue, 8 Apr 2014 02:04:03 BST -->
+<!-- Indices written at Tue, 8 Apr 2014 04:41:53 BST -->
 
 <datastore-indexes>
 
@@ -26,7 +26,7 @@
         <property name="fechaCreacion" direction="desc"/>
     </datastore-index>
 
-    <!-- Used 2 times in query history -->
+    <!-- Used 1 time in query history -->
     <datastore-index kind="Publicacion" ancestor="false" source="auto">
         <property name="tipo" direction="asc"/>
         <property name="numVisitas" direction="desc"/>

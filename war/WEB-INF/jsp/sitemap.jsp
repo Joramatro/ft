@@ -11,42 +11,42 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://www.comprarmovileshoy.com/</loc>
+  <loc>http://www.feeltighter.com/</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarmovileshoy.com/moviles</loc>
+  <loc>http://www.feeltighter.com/blog</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarmovileshoy.com/extras</loc>
+  <loc>http://www.feeltighter.com/specialoffer</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarmovileshoy.com/blog</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://www.comprarmovileshoy.com/sobre</loc>
+  <loc>http://www.feeltighter.com/about</loc>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarmovileshoy.com/contacto</loc>
+  <loc>http://www.feeltighter.com/contact</loc>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarmovileshoy.com/politica-de-privacidad</loc>
+  <loc>http://www.feeltighter.com/privacy</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://www.feeltighter.com/terms</loc>
   <changefreq>yearly</changefreq>
 </url>
 <c:forEach var="publicacion" items="${publicacionesEbooks}">	
 	<url>
-	  <loc>http://www.comprarmovileshoy.com/${publicacion.url}</loc>
+	  <loc>http://www.feeltighter.com/${publicacion.url}</loc>
 	  <changefreq>weekly</changefreq>
 	</url>
 </c:forEach>
 <c:forEach var="publicacion" items="${publicacionesBlog}">	
 	<url>
-	  <loc>http://www.comprarmovileshoy.com/${publicacion.url}</loc>
+	  <loc>http://www.feeltighter.com/${publicacion.url}</loc>
 	  <changefreq>weekly</changefreq>
 	</url>
 </c:forEach>

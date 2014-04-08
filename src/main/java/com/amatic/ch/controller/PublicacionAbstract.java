@@ -42,7 +42,7 @@ public abstract class PublicacionAbstract {
 	    String web, String nbrComment, HttpServletResponse response)
 	    throws IOException, NoSuchAlgorithmException {
 	Akismet akismet = new Akismet("49f8a3bfb431",
-		"http://www.comprarmovileshoy.com");
+		"http://www.feeltighter.com");
 	boolean isSpam = akismet.commentCheck(request.getRemoteAddr(),
 		request.getHeader("User-agent"), request.getHeader("referer"),
 		"", // permalink
@@ -59,7 +59,7 @@ public abstract class PublicacionAbstract {
 			    + email + "\n Dejado en:" + url + "\n Comentario:"
 			    + comentario + "\n Web:" + web + "\n Puntos:"
 			    + puntos + "\n Nombre:" + nombre,
-		    "Spam Akimet comentario en Comprar Moviles Hoy");
+		    "Spam Akimet comentario en Feel Tighter");
 	    response.sendRedirect("/");
 	    response.flushBuffer();
 	} else {
@@ -114,7 +114,7 @@ public abstract class PublicacionAbstract {
 			    + " y email: " + email + "\n Dejado en:" + url
 			    + "\n Comentario:" + comentario + "\n Web:" + web
 			    + "\n Puntos:" + puntos + "\n Nombre:" + nombre,
-		    "Nuevo Comentario Comprar Moviles Hoy");
+		    "Nuevo Comentario Feel Tighter");
 	}
 
     }

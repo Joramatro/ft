@@ -18,10 +18,10 @@
 					<p class="descPortada">${publicacion.descPortada}</p>
 					<c:choose>
 					<c:when test="${publicacion.disponible eq 'S' }">
-						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Boton Comprar Hoy');" href="/venta/principal/${publicacion.url}" class="da-link">COMPRAR HOY</a>
+						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Button WFV');" href="/getfreeaccess/${publicacion.url}" class="da-link">WATCH FREE VIDEO</a>
 					</c:when>
 					<c:otherwise>
-						<a title="${publicacion.titulo}" href="/${publicacion.url}" class="da-link">LEER MÁS</a>
+						<a title="${publicacion.titulo}" href="/${publicacion.url}" class="da-link">LEARN MORE</a>
 					</c:otherwise>
 					</c:choose>
 					<div class="da-img">						
@@ -47,7 +47,7 @@
 				
 		<!--start: Container -->
     	<div class="container">
-		<table style="margin: 0px auto -43px">
+		<%-- <table style="margin: 0px auto -43px">
     		<tr>
     		<td>
 	    	<div id="Amazon1" class="iframe_wrap">
@@ -61,7 +61,7 @@
 	    	</td>
 	    	<td>
 			<div id="googleRecIndex1" class="iframe_wrap">
-				<%-- 
+				 
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 				<!-- rectangulo index izquierda cafetera -->
 				<ins class="adsbygoogle"
@@ -71,12 +71,12 @@
 				<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
 				</script>
-				--%>
+				
 			</div>
 			</td>
 			<td>
 			<div id="googleRecIndex2" class="iframe_wrap">
-				<%--
+				
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 				<!-- rectangulo index derecha cafetera -->
 				<ins class="adsbygoogle"
@@ -86,7 +86,7 @@
 				<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
 				</script>
-				--%>
+				
 			</div>
 			</td>
 			<td>
@@ -102,15 +102,16 @@
 	    	</tr>
 	    </table>		
 			<hr>
+			--%>
 	
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
 				<h3>
-					Los móviles libres y baratos se han convertido hoy en día en el complemento ideal para acompañarnos a todas partes y mantenernos en contacto con nuestros seres queridos: Comprar un móvil te permitirá además estar conectado a Internet y la red consiguiendo una experiencia de usuario única gracias al constante desarrollo tecnológico de los smartphones.<br>
-					Aquí te ayudaremos a comprar el móvil o smartphone libre y online que más se ajuste a tus necesidades, al precio más barato y pudiendo comparar los móviles más actuales del mercado.<br>
-					Te mostramos los mejores análisis de móviles libres, Android, iOS de Apple, Windows Phone y comparativas junto a las mejores marcas como Samsung, Sony, Sony Ericsson, Motorola, Huawei, Alcatel, Nokia, HTC, LG, Blackberry o iPhone para que puedas responder con la mejor información a la pregunta de qué móvil comprar.
+					We are gonna to share what new research reveals is the exact reason why it’s so much more difficult for you to lose weight and keep it off compared to men.<br>
+					And more importantly you’ll discover a breakthrough tip used by women on this page to banish unwanted body fat fast that you can use to do the same by...<br>
+					This is something completely different and you’re going to love it. Start getting real results.
 				</h3>
-        		<p><br><a class="btn btn-primary btn-large" title="Blog" href="/blog">ver Blog</a> &nbsp;&nbsp;<a title="Moviles" class="btn btn-primary btn-large" href="/moviles">ver Móviles</a></p>
+        		<p><br><a class="btn btn-primary btn-large" title="Blog" href="/blog">Blog</a> &nbsp;&nbsp;<a title="Blog" class="btn btn-primary btn-large" href="/blog">Blog</a></p>
       		</div>
 			<!-- end: Hero Unit -->
       		
@@ -126,8 +127,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Múltiples vías de comunicación</h3>
-								<p>La posibilidad de comunicarse a través de voz, texto vía SMS o correo electrónico e Internet permite como nunca antes la interacción entre humanos por muy lejos que estén.</p>
+								<h3>One Master Hormone</h3>
+								<p>Science has now discovered that virtually everything to do with weight loss for both men and women is controlled by 1 master hormone.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -139,8 +140,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Aplicaciones empresariales</h3>
-								<p>Gracias al impresionante avance tecnológico experimentado en los últimos años y aplicado a la telefonía móvil, los smartphones se han convertido en una herramienta fantástica para cualquier negocio o empresa que necesite estar siempre online.</p>
+								<h3>New Discovers</h3>
+								<p>Researchers recently discovered that women naturally have twice as much of the fat burning hormone Leptin in their body compared to men.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -152,8 +153,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Precios económicos</h3>
-								<p>El constante desarrollo de sistemas operativos móviles como Android, iOS, Windows Phone o BlackBerry OS y al ecosistema de aplicaciones creadas en torno a ellos, los móviles libres ofrecen un sinfín de posibilidades a un precio mucho más barato que años atrás.</p>
+								<h3>Women Evolution</h3>
+								<p>Fact is evolution has made it much more difficult for women to lose weight by keeping leptin’s signal to burn fat disconnected.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -170,7 +171,7 @@
 			<%@ include file="/WEB-INF/jsp/includes/masleidos.jsp"%>
 						
 		<hr>	
-		<div class="title"><h3>Últimas Publicaciones</h3></div>			
+		<div class="title"><h3>Last Posts</h3></div>			
 			<!-- start: Portfolio -->
 		<div class="container">
 			<div id="portfolio-wrapper" class="row">
@@ -223,8 +224,6 @@
 			<!-- end: Portfolio -->
 		</div>     	
 		<hr>			
-						
-			<%@ include file="/WEB-INF/jsp/includes/carrusel.jsp"%>
 			
 		</div>
 		<!--end: Container-->
@@ -252,20 +251,21 @@
 	});
 	
 	if($('#footer').width() < 1345){
-		$("#Amazon3").hide();
-		$("#Amazon4").hide();
-		$("#googleRecIndex2").hide();
+		//$("#Amazon3").hide();
+		//$("#Amazon4").hide();
+		//$("#googleRecIndex2").hide();
 	}
 	
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		$(".titPortada").css("font-size","38px");
 		$(".descPortada").css("font-size","14px");
-		$("#Amazon3").hide();
-		$("#Amazon4").hide();
-		$("#googleRecIndex2").hide();
+		//$("#Amazon3").hide();
+		//$("#Amazon4").hide();
+		//$("#googleRecIndex2").hide();
 	}
 	
 	$(window).bind('resize', function () { 
+		/*
 		if($('#footer').width() < 1345){
 			$("#Amazon3").hide();
 			$("#Amazon4").hide();
@@ -275,6 +275,7 @@
 			$("#Amazon4").show();
 			$("#googleRecIndex2").show();
 		}
+		*/
 	});
 </script>
 

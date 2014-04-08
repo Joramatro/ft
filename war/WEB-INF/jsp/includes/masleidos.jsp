@@ -7,7 +7,7 @@
 
 			<div class="row">	
 				<div class="span9">					
-					<div class="title"><h3>Los móviles más vistos...</h3></div>
+					<div class="title"><h3>Most Viewed...</h3></div>
 					
 					<!-- start: Row -->
 		      		<div class="row">
@@ -42,7 +42,7 @@
 
 					<div class="testimonial-container">
 
-						<div class="title"><h3>Últimos Comentarios</h3></div>
+						<div class="title"><h3>Last Comments</h3></div>
 
 							<div class="testimonials-carousel" data-autorotate="3000">
 
@@ -55,7 +55,7 @@
 										</c:if>
 										</div>
 										<div class="testimonials-bg"></div>										
-										<div class="testimonials-author">${comentario.nombre}, en <a title="${comentario.publicacion.titulo}" href="/${comentario.publicacion.url }">${comentario.publicacion.titulo}</a></div>
+										<div class="testimonials-author">${comentario.nombre}, at <a title="${comentario.publicacion.titulo}" href="/${comentario.publicacion.url }">${comentario.publicacion.titulo}</a></div>
 									</li>
 									</c:forEach>
 								</ul>
@@ -71,35 +71,5 @@
 			</div>
 			
 			<hr>
-			
-			<div class="row">	
-				<div class="span9">					
-					<div class="title"><h3>Los artículos más leídos...</h3></div>					
-					<!-- start: Row -->
-		      		<div class="row">
-						<c:forEach var="publicacionMVA" items="${publicacionesMVA}" varStatus="status" end="2">	
-						<div class="span3">	
-							<div class="picture">
-								<a href="/${publicacionMVA.url}" title="${publicacionMVA.titulo}">
-									<c:if test="${!empty publicacionMVA.lImages }">
-									<img style="width: 270px;height: 240px;" src="${publicacionMVA.lImages[1]}" alt="${publicacionMVA.titulo}"/>
-									</c:if>
-									<div class="image-overlay-link"></div>
-								</a>
-							</div>
-							<div class="item-description">
-								<h4><a title="${publicacionMVA.titulo}" href="/${publicacionMVA.url}">${publicacionMVA.titulo}</a></h4>
-								<c:if test="${publicacionMVA.sumaPuntos gt 0 }">
-								<div class="rateit" data-rateit-value="${publicacionMVA.sumaPuntos div publicacionMVA.votantes}" data-rateit-ispreset="true" data-rateit-readonly="true" title="<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${publicacionMVA.sumaPuntos div publicacionMVA.votantes}" /> / 5"></div>
-								</c:if>								
-								<p>
-									${fn:replace(publicacionMVA.descripcion, newLineChar, "<p/><p>")}
-								</p>
-								<p><i title="Visto" style="margin-top: -17px;" class="ico-eye-open"></i>  ${publicacionMVA.numVisitas} veces</p>
-							</div>					
-        				</div>
-        				</c:forEach>					
-					</div>
-				</div>
-			</div>			
+					
 			

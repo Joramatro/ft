@@ -139,12 +139,12 @@ $(function(){
 		        	  "email": $("#newsletter_input").val()
 		          },
 			      success: function(text){
-			    	  Apprise("Por favor, sigue las instrucciones mostradas en la nueva ventana abierta. Gracias por suscribirte a nuestras publicaciones!");
+			    	  Apprise("Please follow the guidelines showed on the new opened screen. Thanks to subscribe to our news!");
 			    	  $("#newsletter_input").val("");
 			      }
 			    });
 	    }else {
-		    alert("Por favor, introduce tu email en la siguiente ventana y sigue las instrucciones mostradas.");
+		    alert("Please introduce your email and follow the guidelines.");
 		}
     });
 });
@@ -152,11 +152,11 @@ $(function(){
 function validarComentarios(){
 	  var email = $("#comEmail").val();
 	  if (!validateEmail(email)) {  
-	    alert("Por favor, introduce un email correcto");
+	    alert("Please enter a correct email");
 	    return false;
 	  }
 	  if($("#comNombre").val() =="" || $("#comComentario").val() == ""){
-		  alert("Por favor, rellena los campos obligatorios (*)");
+		  alert("Please fill in mandatory fields (*)");
 		  return false;
 	  }
 	  return true;
@@ -178,7 +178,7 @@ $(function(){
 		        	  "message": $("#messageContact").val()
 		          },
 			      success: function(text){
-			    	  Apprise("Hemos recibido tu mensaje. Te responderemos en cuanto nos sea posible. Gracias!");
+			    	  Apprise("We received your message. We will get back to you as soon as we can. Thanks!");
 			    	  $("#newsletter_input").val("");
 			    	  $("#emailContact").val("");
 			    	  $("#nameContact").val("");
@@ -186,7 +186,7 @@ $(function(){
 			      }
 			    });
 	  }else {
-		    alert("Por favor, introduce un email correcto");
+		    alert("Please enter a correct email");
 		  }
 	    });
 });

@@ -28,7 +28,7 @@
 	
 	<!--start: Wrapper -->
 	<div itemscope itemtype="http://schema.org/Article" id="wrapper">
-		<div style="display:none"><span itemprop="url">http://www.comprarmovileshoy.com/${publicacion.url}</span><span itemprop="publisher">Comprar Móviles Hoy</span></div>		
+		<div style="display:none"><span itemprop="url">http://www.feeltighter.com/${publicacion.url}</span><span itemprop="publisher">Feel Tighter</span></div>		
 		<!--start: Container -->
     	<div class="container">
 			<% 
@@ -379,7 +379,7 @@
 												
 		<br><br>					
 															
-		<%@ include file="/WEB-INF/jsp/includes/carrusel.jsp"%>					
+		<%-- <%@ include file="/WEB-INF/jsp/includes/carrusel.jsp"%> --%>				
 		</div>
 		<!-- end: Container  -->
 	

@@ -21,9 +21,9 @@ public class CustomRssViewer extends AbstractRssFeedView {
     protected void buildFeedMetadata(Map<String, Object> model, Channel feed,
 	    HttpServletRequest request) {
 
-	feed.setTitle("Comprar Móviles Hoy");
-	feed.setDescription("Toda la información para que puedas comprar online el móvil más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone");
-	feed.setLink("http://www.comprarmovileshoy.com");
+	feed.setTitle("Feel Tighter");
+	feed.setDescription("Reviews and advice about health and beauty to get your goals and feel tighter and better in your daily life, we show your new path and it’s time to realize it");
+	feed.setLink("http://www.feeltighter.com");
 
 	super.buildFeedMetadata(model, feed, request);
     }

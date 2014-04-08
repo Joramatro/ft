@@ -111,7 +111,7 @@ public class HomeController {
 	return "index";
     }
 
-    @RequestMapping(value = { "/venta/{tipo}/{url}" }, method = { RequestMethod.GET })
+    @RequestMapping(value = { "/{tipo}/{url}" }, method = { RequestMethod.GET })
     public String getVenta(ModelMap model, @PathVariable String url,
 	    @PathVariable String tipo, HttpServletRequest request,
 	    HttpServletResponse response) throws IOException,
@@ -129,7 +129,7 @@ public class HomeController {
 	}
 	String key = WebUtils.SHA1(originalUrl.replaceAll("-", " "));
 	Publicacion publicacion = null;
-	if (tipo.equals("principal")) {
+	if (tipo.equals("getfreeaccess")) {
 	    publicacion = publicacionService.getPublicacion(key,
 		    WebConstants.SessionConstants.EBOOK);
 	    if (publicacion == null) {
@@ -146,7 +146,7 @@ public class HomeController {
 			    WebConstants.SessionConstants.ARTICULO);
 		}
 	    }
-	} else if (tipo.equals("extra")) {
+	} else if (tipo.equals("specialoffer")) {
 	    publicacion = publicacionService.getPublicacion(key,
 		    WebConstants.SessionConstants.ACCESORIO);
 	    if (publicacion == null && !originalUrl.equals(url)) {

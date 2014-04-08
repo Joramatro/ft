@@ -259,15 +259,15 @@
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-46821516-1', 'comprarmovileshoy.com');
-	  ga('require', 'linkid', 'linkid.js');
-	  ga('send', 'pageview');
-	  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+ga('create', 'UA-49804814-1', 'feeltighter.com');
+ga('send', 'pageview');
+
 </script>
+
 </head>
 <body>
 	
@@ -295,25 +295,24 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-phone circle"></i>Feel <span>Tighter</span>.</a>
+					<a class="brand" href="/"><i class="ico-thumbs-up circle"></i>Feel <span>Tighter</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul id="menuSuperior" class="nav" style="margin-right:-30px;">
 							<li id="menuInicio">
-	                			<a onClick="ga('send', 'event', 'Menu Superior', 'Menu Inicio', 'Inicio');" href="/">Inicio</a>
+	                			<a onClick="ga('send', 'event', 'Menu Superior', 'Menu Home', 'Home');" href="/">Home</a>
 	              			</li>
-	              			<li id="menuMoviles"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Moviles', 'Moviles');" title="Móviles" href="/moviles">Móviles</a></li>
+	              			<li id="menuBlog"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Blog', 'Blog');" title="Blog" href="/blog">Blog</a></li>
 							<li class="dropdown">
-	                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Destacados<b class="caret"></b></a>
+	                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Popular<b class="caret"></b></a>
 	                			<ul class="dropdown-menu">
 	                				<c:forEach var="publicacion" items="${publicacionesDestacadas}" varStatus="status" end="5">
-										<li><a onClick="ga('send', 'event', 'Menu Superior', '${publicacion.titulo}', 'Destacados');" title="${publicacion.titulo}" href="/${publicacion.url}">${publicacion.titulo}</a></li>									
+										<li><a onClick="ga('send', 'event', 'Menu Superior', '${publicacion.titulo}', 'Popular');" title="${publicacion.titulo}" href="/${publicacion.url}">${publicacion.titulo}</a></li>									
 	                  				</c:forEach>	                					                  				
 								</ul>
 	              			</li>
-	              			<li id="menuExtras"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Extras', 'Extras');" title="Extras" href="/extras">Extras</a></li>
-	              			<li id="menuBlog"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Blog', 'Blog');" title="Blog" href="/blog">Blog</a></li>	              																			
-	              			<li id="menuSobre"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Sobre', 'Sobre');" title="Sobre Nosotros" href="/sobre">Sobre nosotros</a></li>
-	              			<li id="menuContacto"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Contacto', 'Contacto');" title="Contacto" href="/contacto">Contacto</a></li>
+	              			<li id="menuSpecialOffer"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Extras', 'SpecialOffer');" title="Special Offer" href="/specialoffer">Special Offer</a></li>
+	              			<li id="menuAbout"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu About', 'About');" title="About" href="/about">About</a></li>
+	              			<li id="menuContact"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Contact', 'Contact');" title="Contacto" href="/contact">Contact</a></li>
 	              			<li style="margin-top: -8px;"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu RSS', 'RSS');" href="#newsletter" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></li>
 	            		</ul>
 	          		</div>

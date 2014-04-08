@@ -23,7 +23,7 @@ public class Mail {
 	    msg.setFrom(new InternetAddress("jorge.amatrome@gmail.com",
 		    "Jorge CMsH News"));
 	    msg.addRecipient(Message.RecipientType.TO, new InternetAddress(
-		    "hola@comprarmovileshoy.com", "Jorge Amat"));
+		    "hello@feeltighter.com", "Admin Feel Tighter"));
 	    msg.setSubject(subject);
 	    msg.setText(msgBody);
 	    Transport.send(msg);

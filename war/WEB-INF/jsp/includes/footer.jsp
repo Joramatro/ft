@@ -13,7 +13,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="http://www.comprarmovileshoy.com/">CM<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="http://www.feeltighter.com/">F<span>Tighter</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -25,11 +25,13 @@
 
 						<ul id="footer-nav">
 
-							<li><a href="http://www.comprarmovileshoy.com/">Inicio</a></li>
+							<li><a href="http://www.feeltighter.com/">Home</a></li>
 
-							<li><a href="/moviles">Móviles</a></li>
+							<li><a href="/blog">Blog</a></li>
 							
-							<li><a href="/contacto">Contacto</a></li>
+							<li><a href="/about">About</a></li>
+							
+							<li><a href="/contact">Contact</a></li>
 
 						</ul>
 
@@ -42,7 +44,7 @@
 				<div class="span1">
 						
 					<div id="footer-menu-back-to-top">
-						<a href="http://www.comprarmovileshoy.com/"></a>
+						<a href="http://www.feeltighter.com/"></a>
 					</div>
 				
 				</div>
@@ -68,9 +70,9 @@
 				<!-- start: About -->
 				<div class="span3">
 					
-					<h3>Sobre nosotros</h3>
+					<h3>About us</h3>
 					<p>
-						Somos un equipo de personas que quiere ofrecerte la mejor información y todos los detalles que necesitas saber sobre móviles y smartphones para que puedas elegir el móvil libre que mejor se ajuste a tus necesidades y al precio más económico y barato del mercado.
+						We are a professional team passionate about healthy and beauty who want to provide you the best information and advice for getting your life goals.
 					</p>
 						
 				</div>
@@ -91,17 +93,17 @@
 				<div class="span6">
 				
 					<!-- start: Follow Us -->
-					<h3>Síguenos!</h3>
+					<h3>Follow us!</h3>
 					<ul class="social-grid">
 						<li>
 							<div class="social-item">				
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-twitter">
-											<a target="_blank" href="https://twitter.com/ComprarMovilesH"></a>
+											<a target="_blank" href="https://twitter.com/"></a>
 										</div>
 										<div class="social-info-back social-twitter-hover">
-											<a target="_blank" href="https://twitter.com/ComprarMovilesH"></a>
+											<a target="_blank" href="https://twitter.com/"></a>
 										</div>	
 									</div>
 								</div>
@@ -112,39 +114,11 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-facebook">
-											<a target="_blank" href="https://www.facebook.com/comprarmovileshoy"></a>
+											<a target="_blank" href="https://www.facebook.com/"></a>
 										</div>
 										<div class="social-info-back social-facebook-hover">
-											<a target="_blank" href="https://www.facebook.com/comprarmovileshoy"></a>
+											<a target="_blank" href="https://www.facebook.com/"></a>
 										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="social-item">				
-								<div class="social-info-wrap">
-									<div class="social-info">
-										<div class="social-info-front social-youtube">
-											<a target="_blank" href="https://www.youtube.com/user/comprarhoy2"></a>
-										</div>
-										<div class="social-info-back social-youtube-hover">
-											<a target="_blank" href="https://www.youtube.com/user/comprarhoy2"></a>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="social-item">				
-								<div class="social-info-wrap">
-									<div class="social-info">
-										<div class="social-info-front social-flickr">
-											<a target="_blank" href="http://www.flickr.com/photos/comprarhoy2/"></a>
-										</div>
-										<div class="social-info-back social-flickr-hover">
-											<a target="_blank" href="http://www.flickr.com/photos/comprarhoy2/"></a>
-										</div>	
 									</div>
 								</div>
 							</div>
@@ -153,14 +127,14 @@
 					<!-- end: Follow Us -->
 				
 					<!-- start: Newsletter -->
-					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ComprarMovilesHoy&amp;loc=es_ES', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
-						<h3>Suscríbete! &nbsp; <a href="http://www.comprarmovileshoy.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
-						<p>Por favor, déjanos tu email para recibir nuestras novedades.</p>
+					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=FeelTighter', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
+						<h3>VIP EMAIL &nbsp; <a href="http://www.feeltighter.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
+						<p>Let us your mail and don´t miss our latest news!</p>
 						<label for="newsletter_input">@:</label>
 						<input style="border: 1px solid #29a9df;" type="text" name="email" id="newsletter_input">
-						<input type="submit" id="btnSuscripcion" value="Enviar">			
-						<input type="hidden" value="ComprarMovilesHoy" name="uri"/>
-						<input type="hidden" name="loc" value="es_ES"/>						
+						<input type="submit" id="btnSuscripcion" value="Send">			
+						<input type="hidden" value="FeelTighter" name="uri"/>
+						<input type="hidden" name="loc" value="en_US"/>						
 					</form>
 					<!-- end: Newsletter -->
 				
@@ -184,10 +158,10 @@
 			<div class="span12">
 			
 				<p>
-				<a style="margin-right: 35px;" href="http://www.comprarmovileshoy.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
-				&copy; 2014, <a target="_blank" href="https://www.google.com/+Comprarmovileshoy"><span id="_publisher8" itemscope itemtype="http://schema.org/Organization">
-<span itemprop="name">Comprar Móviles Hoy</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
-				<a style="margin-left: 19px;" href="/politica-de-privacidad">Política de privacidad</a>					
+				<a style="margin-right: 35px;" href="http://www.feeltighter.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
+				&copy; 2014, <a target="_blank" href="https://www.google.com/"><span id="_publisher8" itemscope itemtype="http://schema.org/Organization">
+<span itemprop="name">Feel Tighter</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+				<a style="margin-left: 19px;" href="/terms">Terms</a> | <a href="/privacy">Privacy</a>					
 				</p>
 			</div>
 	
@@ -228,22 +202,18 @@ $("head").append("<link rel='stylesheet' type='text/css' href='/css/rateit.css' 
 	var pathname = window.location.pathname;
 	var parts = pathname.split('/');
 	$("#menuSuperior > li").removeClass('active');
-	if(parts[1] == 'contacto'){		
-		$("#menuContacto").addClass('active');
-	}else if(parts[1] == 'sobre'){	
-		$("#menuSobre").addClass('active');
+	if(parts[1] == 'contact'){		
+		$("#menuContact").addClass('active');
+	}else if(parts[1] == 'about'){	
+		$("#menuAbout").addClass('active');
 	}else if('${publicacion.tipo}' == 'AR'){	
 		$("#menuBlog").addClass('active');
-	}else if(parts[1] == 'extras'){	
-		$("#menuExtras").addClass('active');
-	}else if('${publicacion.tipo}' == 'EB'){	
-		$("#menuMoviles").addClass('active');
-	}else if(parts[1] == 'moviles'){	
-		$("#menuMoviles").addClass('active');
+	}else if(parts[1] == 'specialoffer'){	
+		$("#menuSpecialOffer").addClass('active');
 	}else if(parts[1] == 'blog'){	
 		$("#menuBlog").addClass('active');
 	}else{
-		$("#menuInicio").addClass('active');
+		$("#menuHome").addClass('active');
 	}
 </script>
 

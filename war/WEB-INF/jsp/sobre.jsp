@@ -17,7 +17,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1><i class="ico-keynote ico-white"></i>Sobre Nosotros</h1>
+				<h1><i class="ico-keynote ico-white"></i>About us</h1>
 
 			</div>
 			<!-- end: Container  -->
@@ -40,7 +40,7 @@
 					
 					<!-- start: About Us -->
 					<div id="about">
-						<div class="title"><h3>Sobre nosotros</h3></div>
+						<div class="title"><h3>About us</h3></div>
 						<p>
 							Somos un equipo de personas con gran formación tecnólogica que quiere ofrecerte la mejor información y los mejores análisis sobre móviles en la red.
 						</p>
@@ -51,54 +51,7 @@
 							Por favor, no dudes en contactar con nosotros para consultarnos cualquier duda que tengas ó darnos tu opinión sobre nuestro trabajo, queremos ayudarte y conseguir que tu elección sea la idónea. Puedes usar la sección de comentarios de cada artículo para puntuar, preguntar o aportar más información sobre un producto analizado.
 						</p>
 					</div>	
-					<!-- end: About Us -->
-
-					<!-- start: History -->
-					<div id="history">
-						<div class="title"><h3>Historia</h3></div>
-						<p>
-							<span class="dropcap">1</span>Somos un grupo humano cuya profesión y pasión es la tecnología, que reciéntemente ha decidido apostar por una nueva marca en la que ofrecer sus conocimientos para ayudar a otras personas.
-						</p>
-						<p>
-							<span class="dropcap color">2</span>Desde hace ya unos años, los móviles, hoy en día también conocidos como smartphones, han irrumpido con fuerza en el mercado y se presetan claramente como un aparato tecnológico en constante desarrollo y mejora que promete ser un complemento imprescindible en nuestro día a día para mantenernos conectados y cerca de los nuestros.
-						</p>
-						<p>
-							<span class="dropcap dark">3</span>Nosotros venimos de una formación relacionada con la tecnología, y tras más de 10 años trabajando para distintas empresas TIC privadas y estudiando nuevos gadgets tecnológicos en nuestro tiempo libre, reunimos aquí todos nuestros conocimientos para intentar crear la mejor web de habla hispana sobre móviles y productos relacionados. Nuestro objetivo es ser honestos y aportar valor a nuestros lectores. 
-						</p>
-						<p>
-							Reciéntemente hemos iniciado nuestra propia empresa, dónde pretendemos ofrecer la mejor información y los mejores análisis para conseguir que aciertes con la compra del producto que buscas. Estamos aquí para ayudarte y que decidas con la mejor opinión creada posible, <a title="Contacto" href="/contacto">contacta</a> con nosotros cuando así lo requieras.
-						</p>
-					</div>	
-					<!-- end: History -->
-
-					  
-					<div id="team">
-						
-						<div class="title"><h3>Equipo</h3></div>
-											
-						<div class="row">
-						
-							<div class="span4">
-								<img src="/img/jorge_1.jpg" alt="team member">
-								<div class="team-name">Jorge Amat<span> / Creador de Comprar Hoy</span></div>
-								<p>
-									 Jorge es un joven y polifacético desarrollador de software, especialmente orientado a asuntos de marketing y desarrollo web. Es el creador de la plataforma web "Comprar Hoy" y dedica una buena parte de su tiempo a mejorarla entre otros proyectos. Además colabora con otras empresas tecnológicas en Dublin donde reside hasta la fecha, en busca de la Guinness perfecta. Como gran apasionado a los gadgets tecnológicos, también escribe artículos y anáisis que pueden ayudarte en la elección de tu producto favorito. 
-								</p>
-								<div class="social_profiles">
-									<ul class="social-bookmarks">
-										<li class="facebook"><a target="_blank" href="https://www.facebook.com/jorge.amat.ro">facebook</a></li>
-										<li class="googleplus"><a target="_blank" href="https://plus.google.com/109937898739836694401/" rel=”me”>googleplus</a></li>
-										<li class="linkedin"><a target="_blank" href="http://ie.linkedin.com/pub/jorge-amat-romero/2b/731/895">linkedin</a></li>
-										<li class="twitter"><a target="_blank" href="https://twitter.com/Jorge_Amat1">twitter</a></li>
-										<li class="pinterest"><a target="_blank" href="http://pinterest.com/jorgeamatro/">pinterest</a></li>
-									</ul>
-								</div>	
-							</div>	
-						
-						</div>
-
-					</div>
-										
+					<!-- end: About Us -->						
 					
 				</div>	
 				
@@ -108,22 +61,22 @@
 					<div id="sidebar" style="padding-bottom: 50px;">
 
 						<!-- start: Skills -->
-				       	<div class="title"><h3>Nuestras habilidades</h3></div>
+				       	<div class="title"><h3>Our skills</h3></div>
 				       	<ul class="progress-bar">
 				        	<li>
-				            	<h5>Productos de marca ( 90% )</h5>
+				            	<h5>Brand Products ( 100% )</h5>
 				            	<div class="meter"><span style="width: 90%"></span></div><!-- Edite width here -->
 				          	</li>
 				          	<li>
-				            	<h5>Gestión de contenidos( 100% )</h5>
+				            	<h5>Content Management( 90% )</h5>
 				            	<div class="meter"><span style="width: 100%"></span></div><!-- Edite width here -->
 				          	</li>
 				          	<li>
-				            	<h5>Desarrollo web ( 100% )</h5>
+				            	<h5>Health & Beauty ( 100% )</h5>
 				            	<div class="meter"><span style="width: 100%"></span></div><!-- Edite width here -->
 				          	</li>
 				          	<li>
-				            	<h5>Optimización SEO ( 90% )</h5>
+				            	<h5>SEO ( 90% )</h5>
 				            	<div class="meter"><span style="width: 90%"></span></div><!-- Edite width here -->
 				          	</li>
 				      	</ul>
@@ -139,7 +92,7 @@
 			<!--end: Row-->
 		</div>
 		<div>
-			<%@ include file="/WEB-INF/jsp/includes/carrusel.jsp"%>
+			<%-- <%@ include file="/WEB-INF/jsp/includes/carrusel.jsp"%> --%>
 		</div> 
 		<!--end: Container-->		
 	</div>

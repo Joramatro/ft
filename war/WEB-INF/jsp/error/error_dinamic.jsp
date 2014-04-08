@@ -194,7 +194,7 @@ Error ${errorCode}
   </c:forEach>
 </h2>
 
-  <div class="desc">Por favor, haz click <a href="javascript:history.go(-1);" style="color:red">aqu&iacute;</a> para volver atr&aacute;s<br> o <a href="/" style="color:rgb(79, 182, 157)">aqu&iacute;</a> para volver al Inicio</div>
+  <div class="desc">Please, click <a href="javascript:history.go(-1);" style="color:red">here</a> to go back<br> or <a href="/" style="color:rgb(79, 182, 157)">here</a> to go Home page</div>
 </div>
 <!--  
 		<div class="lbox">
@@ -214,7 +214,7 @@ Error ${errorCode}
 			pw.close();
 			%>
 			<br/> <br/>
-			<p>Por favor, envia esta traza al <a href="mailto:hola@comprarmovileshoy.com">administrator</a></p>
+			<p>Por favor, envia esta traza al <a href="mailto:hello@feeltighter.com">administrator</a></p>
 		</div>
 -->
 </body>

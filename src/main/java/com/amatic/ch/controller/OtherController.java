@@ -37,7 +37,7 @@ public class OtherController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = { "/contacto" }, method = { RequestMethod.GET,
+    @RequestMapping(value = { "/contact" }, method = { RequestMethod.GET,
 	    RequestMethod.POST })
     public String getContacto(ModelMap model, HttpServletRequest request,
 	    HttpServletResponse response) throws IOException {
@@ -45,7 +45,7 @@ public class OtherController {
 	return "contacta";
     }
 
-    @RequestMapping(value = { "/sobre" }, method = { RequestMethod.GET,
+    @RequestMapping(value = { "/about" }, method = { RequestMethod.GET,
 	    RequestMethod.POST })
     public String getSobre(ModelMap model, HttpServletRequest request,
 	    HttpServletResponse response) throws IOException {
@@ -53,13 +53,21 @@ public class OtherController {
 	return "sobre";
     }
 
-    @RequestMapping(value = { "/politica-de-privacidad" }, method = {
-	    RequestMethod.GET, RequestMethod.POST })
+    @RequestMapping(value = { "/privacy" }, method = { RequestMethod.GET,
+	    RequestMethod.POST })
     public String getPoliticaPrivacidad(ModelMap model,
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws IOException {
 
 	return "privacidad";
+    }
+
+    @RequestMapping(value = { "/terms" }, method = { RequestMethod.GET,
+	    RequestMethod.POST })
+    public String getTerms(ModelMap model, HttpServletRequest request,
+	    HttpServletResponse response) throws IOException {
+
+	return "terms";
     }
 
     @RequestMapping(value = { "/suscribir" }, method = { RequestMethod.POST })
@@ -84,8 +92,8 @@ public class OtherController {
 	contacto.setMessage(message);
 	contacto.setName(name);
 	publicacionService.saveContacto(contacto);
-	Mail.sendMail("Nuevo contacto de: " + email + "\n Nombre: " + name
-		+ "\n Mensaje:" + message, "Nuevo Contacto CCHOY");
+	Mail.sendMail("Email Contact: " + email + "\n Name: " + name + "\n :"
+		+ message, "New Query Feel Tighter");
 	return;
     }
 
