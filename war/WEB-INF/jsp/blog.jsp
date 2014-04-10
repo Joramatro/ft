@@ -15,7 +15,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1><i class="ico-phone ico-white"></i>Blog</h1>
+				<h1><i class="ico-woman ico-white"></i>Blog</h1>
 
 			</div>
 			<!-- end: Container  -->
@@ -77,7 +77,7 @@
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%--<span style=""> <i class="mini-ico-user"></i>  <a href="/${publicacion.url}">Jorge Amat</a>--%></span> <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comentarios</a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%--<span style=""> <i class="mini-ico-user"></i>  <a href="/${publicacion.url}">Jorge Amat</a>--%></span> <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
 					</div>	
 				</div>
 				</c:forEach>

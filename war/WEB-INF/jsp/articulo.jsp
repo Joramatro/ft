@@ -16,7 +16,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1 id="_name2" itemprop="name"><i class="ico-phone ico-white"></i>${publicacion.titulo}</h1>
+				<h1 id="_name2" itemprop="name"><i class="ico-woman ico-white"></i>${publicacion.titulo}</h1>
 
 			</div>
 			<!-- end: Container  -->
@@ -63,7 +63,7 @@
 				<c:if test="${not empty publicacion.clase12}">
 					<li class="crumb6" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.8" href="<%=result.toString()%>/blog?filtro=${fn:replace(publicacion.clase12, " ", separador)}" itemprop="url" title="${publicacion.clase12}" class="migapan"><span itemprop="title">${publicacion.clase12}</span></a></li>				
 				</c:if>
-				<li class="crumbF"><span>&nbsp;&gt;&nbsp;</span>${publicacion.titulo}</li>
+				<li class="crumbF">${publicacion.titulo}</li>
 			</ul>
 	    	<div id="banGoogle" class="iframe_wrap" style="position:absolute;margin-left: 830px;">
 				<%-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -77,16 +77,16 @@
 				</script> --%>
 			</div>	
 			<!-- start: Flexslider -->
-			<div style="width: 550px;height: 435px; margin: 0 auto;" class="slider" >
+			<div style="width: 530px;height: 435px; margin: 0 auto;" class="slider" >
 				<div id="flex1" class="flexslider home">
 					<c:if test="${publicacion.disponible eq 'S' }">
-						<a target="_blank" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Superior');" href="/venta/principal/${publicacion.url}">
+						<a target="_blank" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Superior');" href="/getfreeaccess/${publicacion.url}">
 					</c:if>
 					<ul class="slides">
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
 						<c:if test="${status.count ne 3}">
 							<li>
-								<img style="width: 420px;height: 420px;" src="${imagen}"  alt="${publicacion.titulo}" />															
+								<img style="width: 520px;height: 370px;" src="${imagen}"  alt="${publicacion.titulo}" />															
 							</li>
 						</c:if>
 						</c:forEach>
@@ -100,7 +100,6 @@
 				</div>
 			</div>
 			<!-- end: Flexslider -->
-			<hr>
 			
 			<% pageContext.setAttribute("newLineChar", "\n"); %>
 			<!-- start: Row -->
@@ -108,29 +107,29 @@
 				
 				<div class="span2">					
 					<ul class="project-info" style="font-size: 12px;">
-						<li><strong>Número visitas&nbsp;</strong>&nbsp;  ${publicacion.numVisitas}</li>
+						<li><strong>Visits&nbsp;</strong>&nbsp;  ${publicacion.numVisitas}</li>
 						<c:if test="${publicacion.sumaPuntos gt 0 }">
 							<div>
-								<li><strong>Puntos&nbsp;</strong>&nbsp; 
+								<li><strong>Points&nbsp;</strong>&nbsp; 
 								<a href="#comments"><b><span>${publicacion.sumaPuntos}</span></b></a>
-								&nbsp;&nbsp;(de <span>${publicacion.votantes}</span> votantes)</li>
+								&nbsp;&nbsp;(of <span>${publicacion.votantes}</span> voters)</li>
 							</div>
-							<strong>Media&nbsp;</strong>&nbsp;&nbsp;<div class="rateit" data-rateit-value="${publicacion.sumaPuntos div publicacion.votantes}" data-rateit-ispreset="true" data-rateit-readonly="true" title="<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${publicacion.sumaPuntos div publicacion.votantes}" /> / 5"></div> 
+							<strong>Rate&nbsp;</strong>&nbsp;&nbsp;<div class="rateit" data-rateit-value="${publicacion.sumaPuntos div publicacion.votantes}" data-rateit-ispreset="true" data-rateit-readonly="true" title="<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${publicacion.sumaPuntos div publicacion.votantes}" /> / 5"></div> 
 						</c:if>
-						<li><strong>Fecha&nbsp;</strong>&nbsp;<span id="_datePublished5" itemprop="datePublished" content="<fmt:setLocale value='es_ES' scope='session'/><fmt:formatDate type='date' dateStyle='short' value='${publicacion.fechaCreacion}'/>"> <fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span></li>
-						<li><strong>Autor&nbsp;</strong>&nbsp; <a target="_blank" href="${publicacion.googleAutor}" rel=”author”><span id="_author3" itemprop="author" itemscope itemtype="http://schema.org/Person">
+						<li><strong>Date&nbsp;</strong>&nbsp;<span id="_datePublished5" itemprop="datePublished" content="<fmt:setLocale value='es_ES' scope='session'/><fmt:formatDate type='date' dateStyle='short' value='${publicacion.fechaCreacion}'/>"> <fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span></li>
+						<li><strong>Author&nbsp;</strong>&nbsp; <a target="_blank" href="${publicacion.googleAutor}" rel=”author”><span id="_author3" itemprop="author" itemscope itemtype="http://schema.org/Person">
 						<span itemprop="name">${publicacion.autor}</span></span></a></li>
 					</ul>					
 				</div>				
 				<div class="span10">
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<h2><a href="/venta/principal/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Compralo Hoy');" class="button color launch" target="_blank">¡ Comprar Hoy!</a></h2>				
+						<h2><a href="/getfreeaccess/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Button WFV up');" class="button color launch" target="_blank">¡ Watch Free Video!</a></h2>				
 					</c:if>
 					<meta id="_articleBody7" itemprop="articleBody" content="${fn:replace(publicacion.articulo, "\"", "'")}">
 					${publicacion.articulo}				
 					<br>
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<br><h2><a href="/venta/principal/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Compralo hoy al mejor precio');" class="button color launch">¡ Comprar Hoy!</a></h2>
+						<br><h2><a href="/getfreeaccess/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Button WFV down');" class="button color launch">¡ Watch Free Video!</a></h2>
 					</c:if>					
 					<br>
 					<!-- AddThis Button BEGIN -->
@@ -154,7 +153,7 @@
 					</script> 
 					
 					<br><br>
-					<p style="font-style: italic;">Por favor, no dudes en puntuar y comentar tu opinión sobre este artículo en la sección de <a href="#comments">comentarios</a></p>
+					<p style="font-style: italic;">Please rate and leave your opinion with regards to this article in the <a href="#comments">comments section</a></p>
 				</div>	
 				<div id="banGoogleFinArticulo" class="iframe_wrap" style="width: 64%; margin:0 auto;">
 				<%--
@@ -186,7 +185,7 @@
 	
 				<div class="span9">
 					
-					<div class="title"><h3>También te puede interesar...</h3></div>
+					<div class="title"><h3>Might also interest you...</h3></div>
 					
 					<!-- start: Row -->
 		      		<div class="row">
@@ -220,7 +219,7 @@
 		<div class="row" style="margin-top: 35px;">			
 			<div class="span9">
 			<!-- start: Comments -->
-				<h4>Comentarios <span class="comments-amount">(${fn:length(publicacion.lComentarios)})</span></h4>
+				<h4>Comments <span class="comments-amount">(${fn:length(publicacion.lComentarios)})</span></h4>
 				<c:choose>
 				<c:when test="${publicacion.votantes gt 0}">
 					<div itemscope itemtype="http://data-vocabulary.org/Review-aggregate" id="comments" class="comments-sec">
@@ -298,7 +297,7 @@
 										<a rel="nofollow" href="http://${comentario.web}"><strong><span itemprop="reviewer">${comentario.nombre}</span></strong></a>
 										</c:otherwise>
 										</c:choose>
-										 <span class="reply"><span style="color:#aaa"><c:if test="${comentario.puntos gt 0}">/ </span><b>&nbsp;<span itemprop="rating">${comentario.puntos}</span></b> puntos</c:if></span><span class="date"><time itemprop="dtreviewed" datetime="<fmt:setLocale value='es_ES' scope='session'/><fmt:formatDate type='date' dateStyle='short' value='${comentario.fecha}'/>"><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="both" dateStyle="medium" timeStyle="short" value="${comentario.fecha}"/></time></span></div>
+										 <span class="reply"><span style="color:#aaa"><c:if test="${comentario.puntos gt 0}">/ </span><b>&nbsp;<span itemprop="rating">${comentario.puntos}</span></b> points</c:if></span><span class="date"><time itemprop="dtreviewed" datetime="<fmt:setLocale value='es_ES' scope='session'/><fmt:formatDate type='date' dateStyle='short' value='${comentario.fecha}'/>"><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="both" dateStyle="medium" timeStyle="short" value="${comentario.fecha}"/></time></span></div>
 										<p>
 										<c:if test="${!empty comentario.comentarioReply}">
 											<span style="color:#0088cc;">@${comentario.comentarioReplyNombre} &nbsp;</span><a style="display:inherit" onmouseover="document.getElementById('comment_ref_${status.count}').style.display='block'" onmouseout="document.getElementById('comment_ref_${status.count}').style.display='none';" onclick="document.getElementById('comment_ref_${status.count}').style.display='none';" class="ancla_referencia">#${comentario.comentarioReplyNbr}<span class="referencia" id="comment_ref_${status.count}" style="display:none;font-size: 13px;">${comentario.comentarioReply}</span></a> &nbsp;
@@ -320,7 +319,7 @@
 				<div class="clear" style="padding-top: 35px;"></div>
 	
 				<!-- start: Comment Add -->
-				<h4>Deja un comentario</h4>
+				<h4>Leave a comment</h4>
 				<div class="form-spacer"></div>
 				
 				<!-- Form -->
@@ -328,7 +327,7 @@
 					<form action="/${publicacion.url}/nuevoComentario" id="formComment" method="post">
 						<input id="nbrComment" name="nbrComment" type="hidden"/>
 						<div class="field">
-							<label>Nombre: <span>*</span></label>
+							<label>Name: <span>*</span></label>
 							<input id="comNombre" type="text" name="nombre" maxlength="30" class="text" />
 						</div>
 	
@@ -343,7 +342,7 @@
 						</div>							
 						
 						<div class="field">
-							<label>Dar Puntos: </label>
+							<label>Rate: </label>
 							<select name="puntos" style="width: 9%;" title="Por favor, valora (5 lo mejor) este producto">
 							  <option value="5">5</option>
 							  <option value="4">4</option>
@@ -355,11 +354,11 @@
 						</div>
 	
 						<div class="field">
-							<label>Comentario: <span>*</span></label>
+							<label>Comment: <span>*</span></label>
 							<textarea id="comComentario" name="comentario" class="text textarea" ></textarea>
 						</div>
 						
-						<label>El comentario puede estar sujeto a moderación y tardar unos instantes en aparecer publicado una vez enviado</label>
+						<label>Comments are subject to moderation</label>
 						
 						<div class="field">
 						<br>
@@ -394,12 +393,12 @@
 			$("#banGoogle").hide();
 		}
 	</script>
-	<div id="banAmazonHorizontal" style="position:absolute;top:895px;left:54px;">
+	<%--<div id="banAmazonHorizontal" style="position:absolute;top:895px;left:54px;">
 		<div style="margin-left: 33px; margin-bottom: 12px;"><b>OFERTAS</b></div>
-			<%-- <div id="Amazon1" class="iframe_wrap">
+			<div id="Amazon1" class="iframe_wrap">
 	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=EBF7F9&IS2=1&bg1=EBF7F9&fc1=666666&lc1=005580&t=comprarmicroh-21&o=30&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B007HMLEAY" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>   		   		
 	    	</div>
-			--%>
+			
 			<div id="Amazon2art" class="iframe_wrap">
 	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00GOYN5TE&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 	    	</div>
@@ -407,7 +406,7 @@
 			<div id="Amazon3art" class="iframe_wrap">
 				<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00HEC31ZI&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 			</div>
-	    	<%--
+	    	
 			<div id="Amazon4prod" class="iframe_wrap">
 	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmicroh-21&o=30&p=8&l=as1&asins=B007TVJSGA&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>	   		
 	    	</div>
@@ -415,12 +414,14 @@
 			<div id="Amazon5prod" class="iframe_wrap">
 	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmicroh-21&o=30&p=8&l=as1&asins=B0055ZOY7K&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>	   		
 	    	</div>	
-	    	  --%>  		    	
-	</div>
+	    	    		    	
+	</div>--%>
 	<script>
+	/*
 		if($('#footer').width() < 855){
 			$("#banAmazonHorizontal").hide();
 		}
+	*/
 	</script>
 	
 	<div id="banAmazonEsquina" class="iframe_wrap" style="position: absolute;top: 155px; left: 393px;">
@@ -428,16 +429,17 @@
 	</div>
 	<script>
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			$("#banAmazonEsquina").hide();
+			//$("#banAmazonEsquina").hide();
 			$(".slide-caption").hide();
 		}
 		if($('#footer').width() < 1345){
-			$("#banAmazonEsquina").hide();
+			//$("#banAmazonEsquina").hide();
 			$(".slide-caption").hide();
 		}
 	</script>
 	<script>
 	$(window).bind('resize', function () { 
+		/*
 		if($('#footer').width() < 1345){
 			$("#banGoogle").hide();
 		}else{
@@ -447,16 +449,17 @@
 			$("#banAmazonHorizontal").hide();
 		}else{
 			$("#banAmazonHorizontal").show();
-		}
+		}*/
 		if($('#footer').width() < 1345){
-			$("#banAmazonEsquina").hide();
+			//$("#banAmazonEsquina").hide();
 			$(".slide-caption").hide();
 		}else{
-			$("#banAmazonEsquina").show();
+			//$("#banAmazonEsquina").show();
 			$(".slide-caption").show();
 		}
+		
 	});
-	
+	/*
 	$(window).scroll(function(){
 		if($('#footer').width() >= 855){
 			if($(window).scrollTop() > 895){
@@ -469,6 +472,7 @@
 			}
 		}
 	});	
+	*/
 	</script>
 	<script>
 	jQuery(document).ready(function($){
@@ -487,11 +491,11 @@
 	    });
 	    
 	    $('#_image6').click(function() {
-	    	ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Medio');  
+	    	ga('send', 'event', 'Venta', '${publicacion.url}', 'Image Middle');  
 	    });
 	    
 	    $('.imageContextual').click(function() {
-	    	ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen articulo');  
+	    	ga('send', 'event', 'Venta', '${publicacion.url}', 'Image Article');  
 	    });
 	    
 	    $('.linkContextual').click(function() {
@@ -499,7 +503,7 @@
 	    });
 	    
 	    $('.migapan').click(function(e) {
-	    	ga('send', 'event', 'Migas', 'Miga '+$(e.target).text(), $(e.target).text());  
+	    	ga('send', 'event', 'Crumbs', 'Crumb'+$(e.target).text(), $(e.target).text());  
 	    });
 	});
 	</script>

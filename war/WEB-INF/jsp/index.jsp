@@ -18,10 +18,10 @@
 					<p class="descPortada">${publicacion.descPortada}</p>
 					<c:choose>
 					<c:when test="${publicacion.disponible eq 'S' }">
-						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Button WFV');" href="/getfreeaccess/${publicacion.url}" class="da-link">WATCH FREE VIDEO</a>
+						<a style="background:#FA8E05" title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Button WFV');" href="/getfreeaccess/${publicacion.url}" class="da-link">WATCH FREE VIDEO</a>
 					</c:when>
 					<c:otherwise>
-						<a title="${publicacion.titulo}" href="/${publicacion.url}" class="da-link">LEARN MORE</a>
+						<a style="background:#FA8E05" title="${publicacion.titulo}" href="/${publicacion.url}" class="da-link">LEARN MORE</a>
 					</c:otherwise>
 					</c:choose>
 					<div class="da-img">						
@@ -107,9 +107,9 @@
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
 				<h3>
-					We are gonna to share what new research reveals is the exact reason why it’s so much more difficult for you to lose weight and keep it off compared to men.<br>
-					And more importantly you’ll discover a breakthrough tip used by women on this page to banish unwanted body fat fast that you can use to do the same by...<br>
-					This is something completely different and you’re going to love it. Start getting real results.
+					We are gonna show you what new research reveals is the exact reason why it’s so much more difficult for you to lose weight and keep it off compared to men.<br>
+					And more importantly you’ll discover breakthrough tips used by women on this page to banish unwanted body fat fast that you can use to do the same by...<br>
+					This is something completely different and you’re going to love it. Start getting real results in your body care goals!
 				</h3>
         		<p><br><a class="btn btn-primary btn-large" title="Blog" href="/blog">Blog</a> &nbsp;&nbsp;<a title="Blog" class="btn btn-primary btn-large" href="/blog">Blog</a></p>
       		</div>

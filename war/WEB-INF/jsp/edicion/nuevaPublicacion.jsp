@@ -55,7 +55,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-phone circle"></i>Comprar Móviles <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-phone circle"></i>Feel <span>Tighter</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul class="nav">
 							<li class="active">
@@ -316,7 +316,7 @@ Script52: <input type="text" style="width: 600px;" id="script52" name="script52"
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="/">CMs<span>H</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="/">F<span>T</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -328,11 +328,11 @@ Script52: <input type="text" style="width: 600px;" id="script52" name="script52"
 
 						<ul id="footer-nav">
 
-							<li><a href="/">Inicio</a></li>
+							<li><a href="/">Home</a></li>
 
-							<li><a href="/moviles">Móviles</a></li>
+							<li><a href="/blog">Blog</a></li>
 							
-							<li><a href="/contacto">Contacto</a></li>
+							<li><a href="/contact">Contact</a></li>
 
 						</ul>
 
@@ -485,7 +485,7 @@ Script52: <input type="text" style="width: 600px;" id="script52" name="script52"
 		
 			<div class="span12">
 				<p>
-					&copy; 2014, <a href="/">r Móviles Hoy</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+					&copy; 2014, <a href="/">Feel Tighter</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				</p>
 			</div>
 	

@@ -128,19 +128,7 @@
 	General Terms and Conditions applicable to Use of a Web Site.
 </p>
 </div>
-<Font face="Arial, Helvetica, Garmond" size="2">
-<br>
-<BR>
-<BR>
-<center>
-© 2014 <b>Feel Tighter</b> , <font size="-1">All rights reserved.<br>
-Unauthorized duplication or publication of any materials
-from this Site is expressly prohibited.</font>
-<BR>
-<BR>
-</center>
- <BR>
-</font>
+
 					</div>
 				</div>
 			</div>      	

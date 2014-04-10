@@ -76,19 +76,7 @@ Disclosure of Personally Identifiable Information to comply with law. We will di
 <b>Links:</b><BR>
  This web site contains links to other web sites. Please note that when you click on one of these links, you are moving to another web site. We encourage you to read the privacy statements of these linked sites as their privacy policies may differ from ours.
  <BR>
-<Font face="Arial, Helvetica, Garmond" size="2">
-<br>
-<BR>
-<BR>
-<center>
-© 2014 <b>Feel Tighter</b> , <font size="-1">All rights reserved.<br>
-Unauthorized duplication or publication of any materials
-from this Site is expressly prohibited.</font>
-<BR>
-<BR>
-</center>
- <BR>
-</font>
+
 					</div>
 				</div>
 			</div>      	

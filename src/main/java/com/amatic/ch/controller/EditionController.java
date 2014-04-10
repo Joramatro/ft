@@ -132,19 +132,19 @@ public class EditionController {
 	    articulo = articulo.concat("</p>");
 
 	    articulo = articulo.replaceAll("<a>",
-		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
+		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/getfreeaccess/"
 			    + publicacion.getUrl() + "\">");
 	    articulo = articulo.replaceAll("<a2>",
-		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
+		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/getfreeaccess/"
 			    + publicacion.getUrl() + "-2\">");
 	    articulo = articulo.replaceAll("<a3>",
-		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
+		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/getfreeaccess/"
 			    + publicacion.getUrl() + "-3\">");
 	    articulo = articulo.replaceAll("<a4>",
-		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
+		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/getfreeaccess/"
 			    + publicacion.getUrl() + "-4\">");
 	    articulo = articulo.replaceAll("<a5>",
-		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
+		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/getfreeaccess/"
 			    + publicacion.getUrl() + "-5\">");
 
 	    articulo = articulo.replaceAll("<href *",
@@ -425,7 +425,7 @@ public class EditionController {
 	    if (lImagenes.size() >= 3) {
 		articulo = articulo
 			.replaceAll(
-				"<br><a target=\"_blank\" href=\"/venta/principal/"
+				"<br><a target=\"_blank\" href=\"/getfreeaccess/"
 					+ publicacion.getUrl()
 					+ "\"><img src=\""
 					+ lImagenes.get(2)
