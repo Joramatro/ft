@@ -100,10 +100,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-twitter">
-											<a target="_blank" href="https://twitter.com/"></a>
+											<a target="_blank" href="https://twitter.com/FeelTighter"></a>
 										</div>
 										<div class="social-info-back social-twitter-hover">
-											<a target="_blank" href="https://twitter.com/"></a>
+											<a target="_blank" href="https://twitter.com/FeelTighter"></a>
 										</div>	
 									</div>
 								</div>
@@ -114,10 +114,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-facebook">
-											<a target="_blank" href="https://www.facebook.com/"></a>
+											<a target="_blank" href="https://www.facebook.com/feeltighter"></a>
 										</div>
 										<div class="social-info-back social-facebook-hover">
-											<a target="_blank" href="https://www.facebook.com/"></a>
+											<a target="_blank" href="https://www.facebook.com/feeltighter"></a>
 										</div>
 									</div>
 								</div>
@@ -159,7 +159,7 @@
 			
 				<p>
 				<a style="margin-right: 35px;" href="http://www.feeltighter.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
-				&copy; 2014, <a target="_blank" href="https://www.google.com/"><span id="_publisher8" itemscope itemtype="http://schema.org/Organization">
+				&copy; 2014, <a target="_blank" href="https://plus.google.com/100177613171892573036/"><span id="_publisher8" itemscope itemtype="http://schema.org/Organization">
 <span itemprop="name">Feel Tighter</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				<a style="margin-left: 19px;" href="/terms">Terms</a> | <a href="/privacy">Privacy</a>					
 				</p>

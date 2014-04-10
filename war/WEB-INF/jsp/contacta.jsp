@@ -110,9 +110,9 @@
 				<div class="span5" style="padding-bottom: 12px;">
 					<div class="title"><h3>Follow us!</h3></div>
 					<ul class="social-bookmarks">
-						<li class="facebook"><a target="_blank" href="https://www.facebook.com/">facebook</a></li>
-						<li class="googleplus"><a target="_blank" href="https://plus.google.com/">googleplus</a></li>
-						<li class="twitter"><a target="_blank" href="https://twitter.com/">twitter</a></li>
+						<li class="facebook"><a target="_blank" href="https://www.facebook.com/feeltighter">facebook</a></li>
+						<li class="googleplus"><a target="_blank" href="https://plus.google.com/100177613171892573036/">googleplus</a></li>
+						<li class="twitter"><a target="_blank" href="https://twitter.com/FeelTighter">twitter</a></li>
 					</ul>
 				</div>
 				<!-- end: Social Sites -->							

@@ -45,7 +45,7 @@
 
 			<div id="filters" style="margin-top: 15px;">
 				<ul id="optionSet1" class="option-set" data-option-key="filter">
-					<li><a href="#filter" class="selected" data-option-value="*">Todos</a></li>
+					<li><a href="#filter" class="selected" data-option-value="*">All</a></li>
 					<c:forEach var="categoria" items="${categorias}" varStatus="status" >
 						<li><a href="#filter" class='${fn:replace(categoria, " ", separadorClase)}' data-option-value=".${fn:replace(categoria, " ", separadorClase)}">${categoria}</a></li>
 					</c:forEach>
@@ -77,7 +77,7 @@
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%--<span style=""> <i class="mini-ico-user"></i>  <a href="/${publicacion.url}">Jorge Amat</a>--%></span> <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="en_US" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%--<span style=""> <i class="mini-ico-user"></i>  <a href="/${publicacion.url}">Jorge Amat</a>--%></span> <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
 					</div>	
 				</div>
 				</c:forEach>

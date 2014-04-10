@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- end: Mobile Specific -->
 	<c:choose>
-	<c:when test="${!empty publicacion && publicacion.tipo eq 'EB'}">
+	<c:when test="${!empty publicacion && publicacion.tipo eq 'AR'}">
 		<title>${publicacion.titulo} - Feel Tighter</title> 
 		<meta name="description" content="${publicacion.descripcion} - Feel Tighter"/>
 		<meta name="author" content="Feel Tighter" />
@@ -122,7 +122,7 @@
 		<link rel="canonical" href="http://www.feeltighter.com/contact"/>
 	</c:when>
 	
-	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
+	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
 		<title>Blog - Feel Tighter</title> 
 		<meta name="description" content="Post and reviews about heatlh and beauty in our blog - Feel Tighter"/>
 		<meta name="author" content="Feel Tighter" />
@@ -229,8 +229,8 @@
 	</c:otherwise>		
 	</c:choose>
 	<link rel="alternate" type="application/rss+xml" title="Feel Tighter RSS Feed" href="http://www.feeltighter.com/rssfeed" />
-	<link rel="author" href="https://plus.google.com/" />
-	<link rel="publisher" href="https://www.google.com/" />
+	<link rel="author" href="https://plus.google.com/100177613171892573036/" />
+	<link rel="publisher" href="https://plus.google.com/100177613171892573036/" />
 	<style>
 	@font-face {
 	  font-family: 'Droid Sans';

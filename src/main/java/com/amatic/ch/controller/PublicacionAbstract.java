@@ -65,11 +65,8 @@ public abstract class PublicacionAbstract {
 	} else {
 	    String key = WebUtils.SHA1(url.replaceAll("-", " "));
 	    Publicacion publicacion = publicacionService.getPublicacion(key,
-		    WebConstants.SessionConstants.EBOOK);
-	    if (publicacion == null) {
-		publicacion = publicacionService.getPublicacion(key,
-			WebConstants.SessionConstants.ARTICULO);
-	    }
+		    WebConstants.SessionConstants.ARTICULO);
+
 	    if (publicacion == null || Integer.parseInt(puntos) < 0
 		    || Integer.parseInt(puntos) > 5 || email == null
 		    || (email != null && email.trim().equals(""))) {

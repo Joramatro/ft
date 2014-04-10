@@ -45,7 +45,7 @@
 
 			<div id="filters" style="margin-top: 15px;">
 				<ul class="option-set" data-option-key="filter">
-					<li><a href="#filter" class="selected" data-option-value="*">Todos</a></li>
+					<li><a href="#filter" class="selected" data-option-value="*">All</a></li>
 					<c:forEach var="categoria" items="${categorias}" varStatus="status" >
 						<li><a href="#filter" data-option-value=".${fn:replace(categoria, " ", separadorClase)}">${categoria}</a></li>
 					</c:forEach>
@@ -62,19 +62,19 @@
 				<c:forEach var="publicacion" items="${publicaciones}" varStatus="status" >				
 				<div class="span4 portfolio-item ${fn:replace(publicacion.clase1, " ", separadorClase)} ${fn:replace(publicacion.clase2, " ", separadorClase)}">
 					<div class="picture">
-					<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Extra');" href="/venta/extra/${publicacion.url}">
+					<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Extra');" href="/specialoffer/${publicacion.url}">
 					<c:if test="${!empty publicacion.lImages }">
 					<img src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
 					</c:if>
 					
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
-							<h5><a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Extra');" href="/venta/extra/${publicacion.url}">${publicacion.titulo}</a>
+							<h5><a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Extra');" href="/specialoffer/${publicacion.url}">${publicacion.titulo}</a>
 							<p>
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><span style=""></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="en_US" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><span style=""></div>
 					</div>	
 				</div>
 				</c:forEach>

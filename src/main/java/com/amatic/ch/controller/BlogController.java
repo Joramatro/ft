@@ -26,7 +26,7 @@ public class BlogController extends PublicacionAbstract {
 	return setPublicacion(url, request, model);
     }
 
-    @RequestMapping(value = { "/{url}/nuevoComentario" }, method = { RequestMethod.POST })
+    @RequestMapping(value = { "/{url}/newcomment" }, method = { RequestMethod.POST })
     public void guardarComentario(ModelMap model,
 	    @RequestParam("url") String url,
 	    @RequestParam("nombre") String nombre,
