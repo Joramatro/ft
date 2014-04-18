@@ -248,7 +248,7 @@
     <!-- start: CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/css/parallax-sliderv1.css" rel="stylesheet">   
+    <link href="/css/parallax-sliderv3.css" rel="stylesheet">   
 	<%@ include file="/WEB-INF/jsp/includes/styles.jsp"%>
 	<!-- end: CSS -->
 
@@ -264,6 +264,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-49804814-1', 'feeltighter.com');
+ga('require', 'displayfeatures');
 ga('send', 'pageview');
 
 </script>

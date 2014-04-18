@@ -70,6 +70,10 @@ public class HomeController {
 	// user.setNewUser(true);
 	// Fin Uservalidation trick
 
+	if (request.getParameter("creative") != null) {
+	    String creative = request.getParameter("creative");
+	    session.setAttribute("creative", creative);
+	}
 	List<Publicacion> publicacionesEbooks = publicacionService
 		.getUltimasPublicaciones(WebConstants.SessionConstants.EBOOK);
 

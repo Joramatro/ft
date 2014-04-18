@@ -5,6 +5,7 @@ import java.security.NoSuchAlgorithmException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -22,7 +23,11 @@ public class BlogController extends PublicacionAbstract {
     public String cargarPublicacion(ModelMap model, @PathVariable String url,
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws IOException, NoSuchAlgorithmException {
-
+	HttpSession session = request.getSession();
+	if (request.getParameter("creative") != null) {
+	    String creative = request.getParameter("creative");
+	    session.setAttribute("creative", creative);
+	}
 	return setPublicacion(url, request, model);
     }
 
@@ -48,7 +53,11 @@ public class BlogController extends PublicacionAbstract {
     @RequestMapping(value = { "/blog" }, method = { RequestMethod.GET })
     public String getPublicaciones(ModelMap model, HttpServletRequest request,
 	    HttpServletResponse response) throws IOException {
-
+	HttpSession session = request.getSession();
+	if (request.getParameter("creative") != null) {
+	    String creative = request.getParameter("creative");
+	    session.setAttribute("creative", creative);
+	}
 	setPublicaciones(model, WebConstants.SessionConstants.ARTICULO);
 
 	return "blog";
@@ -57,7 +66,11 @@ public class BlogController extends PublicacionAbstract {
     @RequestMapping(value = { "/specialoffer" }, method = { RequestMethod.GET })
     public String getAccesorios(ModelMap model, HttpServletRequest request,
 	    HttpServletResponse response) throws IOException {
-
+	HttpSession session = request.getSession();
+	if (request.getParameter("creative") != null) {
+	    String creative = request.getParameter("creative");
+	    session.setAttribute("creative", creative);
+	}
 	setPublicaciones(model, WebConstants.SessionConstants.ACCESORIO);
 
 	return "extras";
