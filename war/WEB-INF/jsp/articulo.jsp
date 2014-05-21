@@ -80,7 +80,7 @@
 			<div style="width: 530px;height: 435px; margin: 0 auto;" class="slider" >
 				<div id="flex1" class="flexslider home">
 					<c:if test="${publicacion.disponible eq 'S' }">
-						<a target="_blank" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Superior');" href="/getfreeaccess/${publicacion.url}">
+						<a onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Superior');" href="/getfreeaccess/${publicacion.url}">
 					</c:if>
 					<ul class="slides">
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
@@ -122,8 +122,29 @@
 					</ul>					
 				</div>				
 				<div class="span10">
+				<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style ">
+					<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+					<a class="addthis_button_tweet"></a>
+					<a class="addthis_button_pinterest_pinit"></a>
+					<a class="addthis_counter addthis_pill_style"></a>&nbsp;&nbsp;
+					<g:plusone href="/${publicacion.url}" align="right" size="medium"></g:plusone>
+					</div>
+					<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523eb37018889803"></script>
+					<!-- AddThis Button END -->
+					<!-- Botón +1. -->
+					<script type="text/javascript">
+					  (function() {
+					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					    po.src = 'https://apis.google.com/js/plusone.js';
+					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					  })();
+					</script> 
+					
+					<br>
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<h2><a href="/getfreeaccess/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Button WFV up');" class="button color launch" target="_blank">Start Losing Weight Now!</a></h2>				
+						<h2><a href="/getfreeaccess/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Button WFV up');" class="button color launch">Start Losing Weight Now!</a></h2>				
 					</c:if>
 					<meta id="_articleBody7" itemprop="articleBody" content="${fn:replace(publicacion.articulo, "\"", "'")}">
 					${publicacion.articulo}				
@@ -131,7 +152,7 @@
 					<c:if test="${publicacion.disponible ne 'N'}">
 						<br><h2><a href="/getfreeaccess/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Button WFV down');" class="button color launch">Start Losing Weight Now!</a></h2>
 					</c:if>					
-					<br>
+					
 					<!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style ">
 					<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
@@ -227,7 +248,7 @@
 						<ol class="commentlist">
 						<c:forEach var="comentario" items="${publicacion.comentariosDeref}" varStatus="status">
 							<c:if test="${comentario.publicado ne 'N'}">
-							<li style="width: 100%;">
+							<li style="width: 100%;padding-bottom:6px">
 								<div class="comments">
 									<div class="avatar">
 									<c:choose>
@@ -259,6 +280,9 @@
 										
 										<span itemprop="description">${fn:replace(comentario.comentario, newLineChar, "<br>")}</span>
 										</p>
+										<div style="clear: both;padding-top: 10px;padding-bottom: 10px;">
+											<a title="Reply the message by quoting it" href="#comments-form" onclick="javascript:replyComment('${status.count}');" style="font-size:14px;" >Reply</a>
+										</div>
 									</div>
 								</div>		
 							</li>
@@ -305,6 +329,9 @@
 										
 										<span itemprop="description">${fn:replace(comentario.comentario, newLineChar, "<br>")}</span>
 										</p>
+										<div style="clear: both;padding-top: 10px;padding-bottom: 10px;">
+											<a title="Reply the message by quoting it" href="#comments-form" onclick="javascript:replyComment('${status.count}');" style="font-size:14px;" >Reply</a>
+										</div>
 									</div>
 								</div>		
 							</li>

@@ -185,6 +185,8 @@
 <script defer="defer" src="/js/custom.min.js"></script>
 <script async src="/js/apprise-v2.min.js"></script>
 <script async src="/js/jquery.rateit.min.js"></script>
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async  data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 
 <%@ include file="/WEB-INF/jsp/includes/scripts.jsp"%>
 
