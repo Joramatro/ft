@@ -107,8 +107,8 @@
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
 				<h3>
-					We are going to share what new research reveals is the exact reason why it’s so much more difficult for you to lose weight and keep it off compared to men.<br>
-					It’s time for a solution that truly works with your female metabolism instead of against it that ensures your success.<br>
+					We are going to share what new research reveals is the exact reason why it’s so much more difficult for you to lose weight and keep it off compared to men. Learn more here about how to lose weight fast for women.<br>
+					It’s time for a solution that truly works with your female metabolism instead of against it that ensures your success and allows you to know the nutrients you need to lose weight fast.<br>
 					Without restricting the foods you crave most, without working yourself in some death trap contraption, and most certainly without working against your body so your fat loss process becomes simple, and even enjoyable.
 				</h3>
         		<p><br><a class="btn btn-primary btn-large" title="Blog" href="/blog">Blog</a> &nbsp;&nbsp;<a title="Blog" class="btn btn-primary btn-large" href="/blog">Blog</a></p>
@@ -128,7 +128,7 @@
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
 								<h3>One Master Hormone</h3>
-								<p>Science has now discovered that virtually everything to do with weight loss for both men and women is controlled by 1 master hormone.</p>
+								<p>Science has now discovered that virtually everything to do with weight loss for both men and women is controlled by 1 master hormone. Learn women's diets to lose weight.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -141,7 +141,7 @@
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
 								<h3>New Discovers</h3>
-								<p>Researchers recently discovered that women naturally have twice as much of the fat burning hormone Leptin in their body compared to men.</p>
+								<p>Researchers recently discovered that women naturally have twice as much of the fat burning hormone Leptin in their body compared to men. Get access to the best female diet plan to lose weight fast.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -154,7 +154,7 @@
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
 								<h3>Women Evolution</h3>
-								<p>Fact is evolution has made it much more difficult for women to lose weight by keeping leptin’s signal to burn fat disconnected.</p>
+								<p>Fact is evolution has made it much more difficult for women to lose weight fast by keeping leptin’s signal to burn fat disconnected.</p>
 							</div>
 							<div class="clear"></div>
 						</div>

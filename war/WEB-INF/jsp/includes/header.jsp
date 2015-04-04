@@ -203,14 +203,14 @@
 	</c:when>
 	
 	<c:otherwise>
-		<title>Welcome to Feel Tighter - Reviews and advice about health and beauty</title> 
-		<meta name="description" content="Reviews and advice about health and beauty to get your goals and feel tighter and better in your daily life, we show your new path and it’s time to realize it"/>
+		<title>Welcome to Feel Tighter - Learn how to lose weight fast for women</title> 
+		<meta name="description" content="Reviews and advice to know about the best women's diets to lose weight, nutrients to lose weight fast so you can get the best female diet plan to lose fat fast if you are women"/>
 		<meta name="author" content="Feel Tighter" />
 		<meta name="copyright" content="Feel Tighter" />
 		<meta name="application-name" content="Posts" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Welcome to Feel Tighter - Reviews and advice about health and beauty"/>
-		<meta property="og:description" content="Reviews and advice about health and beauty to get your goals and feel tighter and better in your daily life, we show your new path and it’s time to realize it"/>
+		<meta property="og:title" content="Welcome to Feel Tighter - the best women's diets and programs to lose weight"/>
+		<meta property="og:description" content="Reviews and advice to know about the best women's diets to lose weight, nutrients to lose weight fast so you can get the best female diet plan to lose fat fast if you are a woman."/>
 		<meta property="og:type" content="principal"/>
 		<meta property="og:url" content="http://www.feeltighter.com"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
@@ -220,8 +220,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@FeelTighter">
 		<meta name="twitter:creator" content="@FeelTighter">
-		<meta name="twitter:title" content="Welcome to Feel Tighter - Reviews and advice about health and beauty">
-		<meta name="twitter:description" content="Reviews and advice about health and beauty to get your goals and feel tighter and better in your daily life, we show your new path and it’s time to realize it.">
+		<meta name="twitter:title" content="Welcome to Feel Tighter - the best women's diets and programs to lose weight">
+		<meta name="twitter:description" content="Reviews and advice to know about the best women's diets to lose weight, nutrients to lose weight fast so you can get the best female diet plan to lose fat fast if you are women.">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
 		<meta name="twitter:domain" content="feeltighter.com">
 		<!-- end: Twitter tags -->				
@@ -323,7 +323,7 @@ ga('send', 'pageview');
 						
 		</div>
 		<!--end: Container-->			
-	<div id="banGooHeader" class="iframe_wrap" style="width: 74%; margin:0 auto;">
+	<div id="header" class="iframe_wrap" style="width: 74%; margin:0 auto; display:none">
 		<%--
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- superior 1 skyscraper cafetera -->
@@ -335,6 +335,17 @@ ga('send', 'pageview');
 		(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>
 		--%>
+	</div>
+	<div id="headerMob" class="iframe_wrap" style="width: 53%; margin:0 auto; display:none;">
+		<%--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- mobile header -->
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:320px;height:50px"
+		     data-ad-client="ca-pub-3168560600423825"
+		     data-ad-slot="5554851741"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>--%>
 	</div>			
 	</header>
 	<!--end: Header-->
