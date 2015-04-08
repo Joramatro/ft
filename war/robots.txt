@@ -1,17 +1,5 @@
 Sitemap: http://www.feeltighter.com/sitemap.xml
 
 User-Agent: *
-Disallow: /js/
-Disallow: /css/
-Disallow: /img/
-Disallow: /venta/
-
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: Googlebot-Mobile
-Allow: /
-
-User-agent: Mediapartners-Google
-Allow: /
+Disallow: /free/
 
